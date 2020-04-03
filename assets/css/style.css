@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+div 
+{ 
+  position: absolute;
+  height: 100px;
+  top: 4em;
+  width: 100px;
+  background: rebeccapurple;
+  border-radius: 100%;
+  animation: bewegung infinite 4s;
+  box-shadow: inset 1px 1px 10px 10px;
+}
+div:hover {
+  animation-play-state: paused;
+}
+img {
+  position: absolute;
+  left: 0em;
+  bottom: 5em;
+  height: 120%;
+  width: 120%;
+  transform: rotate(deg);
+}
+
+@keyframes bewegung
+ {
+
+  0% {
+   background: red;
+   top:100px;
+   left: 50px;
+  }
+
+  25% {
+    background: yellow;
+    top:100px;
+    left: 700px;
+  
+  }
+  50% {
+    background: greenyellow;
+    top:600px;
+    left: 700px;
+  }
+  75% {
+    background-color: blue;
+    top:600px;
+    left: 50px;
+  }
+  100%{
+    background: red;
+    top:100px;
+    left: 50px;
+  }
+
+}
